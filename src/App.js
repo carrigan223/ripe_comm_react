@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import ChosenCustomerComponent from "./components/ChosenCustomer/chosenCustomer";
 import CustomerListComponent from "./components/CustomerList/customerList";
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const MainContainer = styled.div`
   min-height: 100vh;
@@ -42,7 +44,7 @@ function App() {
 
 
   return (
-    <MainContainer>
+    <MainContainer class="font-sans">
       <CustomerListComponent customers={customers} />
       <ChosenCustomerComponent />
     </MainContainer>

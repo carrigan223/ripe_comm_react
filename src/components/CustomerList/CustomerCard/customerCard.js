@@ -3,6 +3,9 @@ import CustomerInitials from "../../CustomerInitials/customerInitials";
 import CustomerCardBody from "./customerCardBody";
 
 const CustomerCard = ({ customer }) => {
+
+  //finding the last message date if customer
+  //has messages
   let dateString = ''
   if (customer.messages.length > 0) {
     const firstMessageDate = new Date(customer.messages[0].created_at);

@@ -45,7 +45,9 @@ function App() {
 
   return (
     <MainContainer class="font-sans">
+      {/* left side */}
       <CustomerListComponent customers={customers} />
+      {/* right side */}
       <ChosenCustomerComponent />
     </MainContainer>
   );
